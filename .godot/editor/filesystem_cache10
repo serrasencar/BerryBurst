@@ -1,0 +1,17 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1752781485
+icon.svg::CompressedTexture2D::1184376262700270215::1752760437::1752776590::1::::<><><>0<>0<>7769e6f65f2bc0c8804b4d09b32281a3<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1752776305::0::1::::<><><>0<>0<><>::
+::res://Scenes/::1752781905
+game.tscn::PackedScene::7305130425352389545::1752781905::0::1::::<><><>0<>0<><>::uid://bujdoiiodllst::::res://Sprites/Background.png<>uid://tqs6jp3p56xs::::res://Scenes/player.tscn
+main_menu.tscn::PackedScene::7325301371297365853::1752781905::0::1::::<><><>0<>0<><>::uid://btp2xwj74b7mi::::res://Sprites/BerryBurstMain.png<>uid://8pgnd7efsvnn::::res://Scripts/main_menu.gd<>uid://b30lctl88vuud::::res://Sprites/clicked_button.png
+player.tscn::PackedScene::1367766835844090044::1752781905::0::1::::<><><>0<>0<><>::uid://cqftdbxhaioye::::res://Scripts/player.gd<>uid://d31avew2gba12::::res://Sprites/Screenshot 2025-07-17 at 5.51.56 PM.png
+::res://Scripts/::1752779310
+player.gd::GDScript::5907343822981527756::1752773530::0::1::::<>CharacterBody2D<><>0<>0<><>::
+main_menu.gd::GDScript::2347585230836275067::1752779310::0::1::::<>Control<><>0<>0<><>::
+::res://Sprites/::1752781924
+Background.png::CompressedTexture2D::3808984541519041771::1752760888::1752776590::1::::<><><>0<>0<>587f9d1915d30460e400c7fae8304151<>res://.godot/imported/Background.png-35d93eb57723ae0fb58ad0b59abe54b6.ctex::
+BerryBurstMain.png::CompressedTexture2D::3752655982100827064::1752775848::1752776590::1::::<><><>0<>0<>c82f187f43ab83095649f2c97b06f5aa<>res://.godot/imported/BerryBurstMain.png-def7b4d16a2284b29b0a84f9c6e77cc0.ctex::
+clicked_button.png::CompressedTexture2D::4403990224398561683::1752778869::1752778870::1::::<><><>0<>0<>016cd028cff90631b62e47faf2239103<>res://.godot/imported/clicked_button.png-9195f0ebf8501e5a5239bd5b2e206ef7.ctex::
+Screenshot 2025-07-17 at 5.51.56 PM.png::CompressedTexture2D::9178261241535679319::1752763955::1752776590::1::::<><><>0<>0<>0059363511ccb3df4f90c59adbb9a346<>res://.godot/imported/Screenshot 2025-07-17 at 5.51.56 PM.png-164d6123ac58e2263e667e161d7f03b1.ctex::
+unclicked_butoon.png::CompressedTexture2D::6405378816088629493::1752781924::1752781924::1::::<><><>0<>0<>943dd53e485ad47d924942aae912d587<>res://.godot/imported/unclicked_butoon.png-e4e1e90f3c683777a97d6d489edc33b1.ctex::

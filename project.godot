@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="BerryBurst"
-run/main_scene="uid://dccwowawpbd4l"
+run/main_scene="uid://dcmov4ybsphaj"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_height=680
 
 [rendering]
 
