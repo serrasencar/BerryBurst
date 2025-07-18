@@ -1,7 +1,9 @@
-[gd_scene load_steps=14 format=3 uid="uid://tqs6jp3p56xs"]
+[gd_scene load_steps=16 format=3 uid="uid://tqs6jp3p56xs"]
 
 [ext_resource type="Script" uid="uid://cqftdbxhaioye" path="res://Scripts/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://d31avew2gba12" path="res://Sprites/CharacterMovements.png" id="1_v0iea"]
+[ext_resource type="AudioStream" uid="uid://bdv3qqrnytslx" path="res://Sounds/jump.wav" id="3_6t5aa"]
+[ext_resource type="AudioStream" uid="uid://fadewbbcae2r" path="res://Sounds/point.wav" id="4_vgqql"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6t5aa"]
 atlas = ExtResource("1_v0iea")
@@ -108,4 +110,14 @@ shape = SubResource("RectangleShape2D_v0iea")
 position = Vector2(-9, -324)
 shape = SubResource("CircleShape2D_vgqql")
 
+[node name="JumpSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_6t5aa")
+volume_db = -12.0
+pitch_scale = 0.8
+
+[node name="CatchSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_vgqql")
+volume_db = -8.988
+
 [connection signal="area_entered" from="Basket" to="." method="_on_basket_area_entered"]
+[connection signal="body_entered" from="Basket" to="." method="_on_basket_body_entered"]

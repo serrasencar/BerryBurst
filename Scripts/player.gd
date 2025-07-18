@@ -15,6 +15,7 @@ func _physics_process(delta: float) -> void:
 	# Jump
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		$JumpSound.play()
 
 	# Horizontal Movement
 	var direction := Input.get_axis("ui_left", "ui_right")
@@ -36,9 +37,11 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
-func _on_basket_body_entered(body):
+func _on_basket_body_entered(body: Node2D) -> void:
 	if body.is_in_group("fruit"):
 		print("Fruit caught!")
+		$CatchSound.play()
+		
 		var game_node = get_tree().get_root().get_node("Game")
 		if game_node:
 			game_node.add_point()
