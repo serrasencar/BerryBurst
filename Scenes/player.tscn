@@ -82,11 +82,11 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v0iea"]
+size = Vector2(175, 239)
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_vgqql"]
 radius = 63.0317
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_v0iea"]
-size = Vector2(137, 247.25)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_cvnsp")
@@ -98,10 +98,14 @@ sprite_frames = SubResource("SpriteFrames_6t5aa")
 animation = &"idle_left"
 autoplay = "idle_right"
 
-[node name="Basket" type="CollisionShape2D" parent="."]
-position = Vector2(-7, -293)
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, -120.5)
+shape = SubResource("RectangleShape2D_v0iea")
+
+[node name="Basket" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Basket"]
+position = Vector2(-9, -324)
 shape = SubResource("CircleShape2D_vgqql")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(-18, -131)
-shape = SubResource("RectangleShape2D_v0iea")
+[connection signal="area_entered" from="Basket" to="." method="_on_basket_area_entered"]

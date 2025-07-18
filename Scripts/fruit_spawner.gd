@@ -1,16 +1,17 @@
 extends Node2D
 var spawner_position = 0
-var apple = preload("res://Scenes/fruit.tscn" )
+var fruit = preload("res://Scenes/fruit.tscn" )
 
 func _ready( ):
 	randomize()
 	spawner_position = $Spawner.get_children()
 
-func spawn_apple():
+func spawn_fruit():
 	var index = randi() % spawner_position.size()
-	var Apple = apple.instantiate()
-	Apple.global_position = spawner_position[index].global_position
-	add_child(Apple)
+	var Fruit = fruit. instantiate()
+	Fruit.global_position = spawner_position[index].global_position
+	Fruit.set_fruit_type(randi() % 4)
+	add_child(Fruit)
 
 func _on_timer_timeout():
-	spawn_apple()
+	spawn_fruit()

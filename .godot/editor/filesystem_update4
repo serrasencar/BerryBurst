@@ -5,3 +5,6 @@ res://Scenes/game.tscn
 res://Scenes/main_menu.tscn
 res://Scripts/fruit.gd
 res://Scenes/fruit_spawner.tscn
+res://Scripts/game.gd
+res://Scenes/player.tscn
+res://Scripts/player.gd

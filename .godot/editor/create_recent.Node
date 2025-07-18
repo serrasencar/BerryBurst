@@ -1,11 +1,13 @@
+Label
+CanvasLayer
+Area2D
+Node2D
 Timer
 Marker2D
-Node2D
 CollisionShape2D
 Sprite2D
 CharacterBody2D
 RigidBody2D
-Area2D
 Control
 TextureButton
 TextureRect

@@ -6,7 +6,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_o20pv"]
 radius = 38.0526
 
-[node name="Fruit" type="CharacterBody2D"]
+[node name="Fruit" type="CharacterBody2D" groups=["fruit"]]
 script = ExtResource("1_t6yr1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -15,8 +15,8 @@ scale = Vector2(5.64853, 5.56944)
 texture = ExtResource("2_t6yr1")
 hframes = 38
 vframes = 6
-frame = 27
+frame = 150
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 9)
+position = Vector2(1, 17)
 shape = SubResource("CircleShape2D_o20pv")

@@ -1,12 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://dccwowawpbd4l"]
 
+[ext_resource type="Script" uid="uid://pped85lf2ex2" path="res://Scripts/game.gd" id="1_3dryh"]
 [ext_resource type="Texture2D" uid="uid://bujdoiiodllst" path="res://Sprites/Background.png" id="1_ebmjs"]
 [ext_resource type="PackedScene" uid="uid://tqs6jp3p56xs" path="res://Scenes/player.tscn" id="2_qxrlw"]
 [ext_resource type="PackedScene" uid="uid://cpdr8wugxr4ax" path="res://Scenes/fruit_spawner.tscn" id="3_wrm1d"]
-
-[sub_resource type="GDScript" id="GDScript_qxrlw"]
-script/source = "extends Node2D
-"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wrm1d"]
 texture = ExtResource("1_ebmjs")
@@ -6170,7 +6167,7 @@ distance = -16.0
 
 [node name="Game" type="Node2D"]
 position = Vector2(-5, 1)
-script = SubResource("GDScript_qxrlw")
+script = ExtResource("1_3dryh")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(4, -59)

@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 350.0
 const JUMP_VELOCITY = -450.0
+var score = 0
 
 @onready var sprite = $AnimatedSprite2D
 var last_direction = "right"
@@ -34,3 +35,11 @@ func _physics_process(delta: float) -> void:
 			sprite.play("idle_left")
 
 	move_and_slide()
+
+func _on_basket_body_entered(body):
+	if body.is_in_group("fruit"):
+		print("Fruit caught!")
+		var game_node = get_tree().get_root().get_node("Game")
+		if game_node:
+			game_node.add_point()
+		body.queue_free()
