@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=3 uid="uid://tqs6jp3p56xs"]
 
 [ext_resource type="Script" uid="uid://cqftdbxhaioye" path="res://Scripts/player.gd" id="1_cvnsp"]
-[ext_resource type="Texture2D" uid="uid://d31avew2gba12" path="res://Sprites/Screenshot 2025-07-17 at 5.51.56 PM.png" id="1_v0iea"]
+[ext_resource type="Texture2D" uid="uid://d31avew2gba12" path="res://Sprites/CharacterMovements.png" id="1_v0iea"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6t5aa"]
 atlas = ExtResource("1_v0iea")
@@ -98,7 +98,7 @@ sprite_frames = SubResource("SpriteFrames_6t5aa")
 animation = &"idle_left"
 autoplay = "idle_right"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Basket" type="CollisionShape2D" parent="."]
 position = Vector2(-7, -293)
 shape = SubResource("CircleShape2D_vgqql")
 

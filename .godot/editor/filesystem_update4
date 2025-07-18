@@ -1,4 +1,7 @@
-res://Scenes/main_menu.tscn
-res://Scripts/main_menu.gd
+res://Scenes/fruit.tscn
+res://Scripts/fruit_spawner.gd
+res://fruit_spawner.tscn
 res://Scenes/game.tscn
-res://Scenes/player.tscn
+res://Scenes/main_menu.tscn
+res://Scripts/fruit.gd
+res://Scenes/fruit_spawner.tscn

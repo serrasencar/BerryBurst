@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d31avew2gba12"
-path="res://.godot/imported/Screenshot 2025-07-17 at 5.51.56 PM.png-164d6123ac58e2263e667e161d7f03b1.ctex"
+uid="uid://bmcpynqvpdbc6"
+path="res://.godot/imported/smashed_blueberry.png-76fc693b62e7a3f57a77a804073bb03c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Screenshot 2025-07-17 at 5.51.56 PM.png"
-dest_files=["res://.godot/imported/Screenshot 2025-07-17 at 5.51.56 PM.png-164d6123ac58e2263e667e161d7f03b1.ctex"]
+source_file="res://Sprites/smashed_blueberry.png"
+dest_files=["res://.godot/imported/smashed_blueberry.png-76fc693b62e7a3f57a77a804073bb03c.ctex"]
 
 [params]
 
