@@ -1,6 +1,6 @@
 # 🍓 Berry Burst
 
-**Berry Burst** is a lightweight arcade-style game developed as a personal introduction to 2D game development using the Godot Engine. This project served as my first hands-on exploration of core gameplay mechanics, animation, UI design, and sound integration in a 2D environment. Built over the course of 2.5 days, it reflects foundational design principles and rapid prototyping practices.
+**Berry Burst** is a lightweight arcade-style game developed as a personal introduction to 2D game development using the Godot Engine. This project served as my first hands-on exploration of core gameplay mechanics, animation, UI design, and sound integration in a 2D environment. 
 
 ▶️ **Play on Itch.io:** [https://sierropal.itch.io/berry-burst](https://sierropal.itch.io/berry-burst)
 
