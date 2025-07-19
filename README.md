@@ -31,13 +31,6 @@
 
 ---
 
-## 📁 Folder Structure
-/scenes         # Main game scenes (Game, HealthBar, GameOverScreen, etc.)
-/sprites        # Player, fruit, heart icons, and custom UI elements
-/sound          # Sound effects and background music
-/fonts          # Custom fonts for UI
-/scripts        # GDScript files for game logic
-
 ## 📦 Credits
 
 - **Fruit sprites:** SciGho – Falling Fruit Pack (Itch.io)
