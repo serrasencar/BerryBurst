@@ -4,6 +4,8 @@
 
 ▶️ **Play on Itch.io:** [https://sierropal.itch.io/berry-burst](https://sierropal.itch.io/berry-burst)
 
+ 
+![Gameplay Preview](https://raw.githubusercontent.com/serrasencar/BerryBurst/main/Sprites/BerryBurst.gif)
 ---
 
 ## Gameplay
