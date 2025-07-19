@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://ea56i1pp40c" path="res://Scenes/health_bar.tscn" id="6_1l0tm"]
 [ext_resource type="PackedScene" uid="uid://cjkah4pq0h66j" path="res://Scenes/gui.tscn" id="6_i6g32"]
 [ext_resource type="AudioStream" uid="uid://b6083faiauvl0" path="res://Sounds/BerryBurstMusic.wav" id="7_1l0tm"]
-[ext_resource type="PackedScene" uid="uid://bkdkq75gi2xou" path="res://game_over.tscn" id="8_v158k"]
+[ext_resource type="PackedScene" uid="uid://bkdkq75gi2xou" path="res://Scenes/game_over.tscn" id="8_v158k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wrm1d"]
 texture = ExtResource("1_ebmjs")

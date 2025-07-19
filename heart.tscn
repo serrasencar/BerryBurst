@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://cr4hkd3yyxhki"]
+[gd_scene load_steps=7 format=3 uid="uid://bbgvlle0v68ke"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kwk4n"]
-load_path = "res://.godot/imported/heart.png-e4c9cacde081f165402ad7c69da5bfce.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7p8dj"]
 atlas = SubResource("CompressedTexture2D_kwk4n")

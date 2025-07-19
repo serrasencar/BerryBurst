@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-@onready var score_label: Label = $ScoreLabel
+@onready var score_label: Label = $ScoreContainer/ScoreLabel
 
 func _ready() -> void:
 	score_label.text = "0"

@@ -1,7 +1,7 @@
+Panel
 TextureButton
 Label
 TextureRect
-Panel
 ColorRect
 CanvasLayer
 AudioStreamPlayer

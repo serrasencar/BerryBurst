@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://ea56i1pp40c"]
 
-[ext_resource type="PackedScene" uid="uid://cpxt0ojjainx2" path="res://heart_gui.tscn" id="1_m7ell"]
+[ext_resource type="PackedScene" uid="uid://cpxt0ojjainx2" path="res://Scenes/heart_gui.tscn" id="1_m7ell"]
 [ext_resource type="Texture2D" uid="uid://dl1spm7ohhrli" path="res://Sprites/Border1.png" id="1_m34ix"]
 [ext_resource type="Script" uid="uid://dqhjutyw1eslm" path="res://Scripts/health_bar.gd" id="1_qay8w"]
 [ext_resource type="AudioStream" uid="uid://xm6l2bidgt20" path="res://Sounds/hurt.wav" id="4_wjrfg"]

@@ -18,7 +18,20 @@ grow_horizontal = 0
 texture = ExtResource("1_n5m23")
 expand_mode = 1
 
+[node name="ScoreLabel" type="Label" parent="ScoreContainer"]
+offset_left = 140.0
+offset_top = 31.0
+offset_right = 206.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(0.282353, 0.0470588, 0.305882, 1)
+theme_override_fonts/font = ExtResource("2_m6o0h")
+theme_override_font_sizes/font_size = 26
+text = "0
+"
+horizontal_alignment = 1
+
 [node name="Colon" type="Label" parent="ScoreContainer"]
+layout_mode = 0
 offset_left = 132.0
 offset_top = 32.0
 offset_right = 141.0
@@ -27,15 +40,3 @@ theme_override_colors/font_color = Color(0.282353, 0.0470588, 0.305882, 1)
 theme_override_fonts/font = ExtResource("3_8kag3")
 theme_override_font_sizes/font_size = 21
 text = ":"
-
-[node name="ScoreLabel" type="Label" parent="."]
-offset_left = 1047.0
-offset_top = 31.0
-offset_right = 1113.0
-offset_bottom = 96.0
-theme_override_colors/font_color = Color(0.282353, 0.0470588, 0.305882, 1)
-theme_override_fonts/font = ExtResource("2_m6o0h")
-theme_override_font_sizes/font_size = 26
-text = "0
-"
-horizontal_alignment = 1

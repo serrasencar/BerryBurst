@@ -16,15 +16,20 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ce3w2")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1148.0
+offset_bottom = 701.0
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.5
 anchor_bottom = 1.2
-offset_left = 4.0
+offset_left = 2.0
 offset_top = -20.0
-offset_right = -695.5
-offset_bottom = -635.1
+offset_right = -577.0
+offset_bottom = -99.2
 texture = ExtResource("1_28flt")
 expand_mode = 5
 
@@ -38,7 +43,7 @@ scale = Vector2(1.11526, 1.08851)
 button_mask = 3
 texture_normal = ExtResource("3_ce3w2")
 texture_pressed = ExtResource("3_ce3w2")
-stretch_mode = 0
+stretch_mode = 3
 
 [node name="Control" type="Control" parent="."]
 anchors_preset = 0
