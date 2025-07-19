@@ -6,32 +6,26 @@
 
 ---
 
-## 🎮 Gameplay
+## Gameplay
 
 - Move the basket to catch falling fruit
 - You have 3 hearts — each missed fruit removes one
 - Lose all hearts and a custom game over screen appears
 
----
-
-## ✨ Features
+## Features
 
 - Animated sprites and responsive controls
 - Real-time score updates
 - Pause-based game over logic with replay and quit
 - Background music and sound effects
 
----
-
-## 🛠 Built With
+## Built With
 
 - **Engine:** [Godot Engine 4.x](https://godotengine.org/)
 - **Language:** GDScript
 - **Export:** HTML5 (Itch.io-ready)
 
----
-
-## 📦 Credits
+## Credits
 
 - **Fruit sprites:** SciGho – Falling Fruit Pack (Itch.io)
 - **Sound effects:** Brackeys (CC0)
