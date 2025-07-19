@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=3 uid="uid://bkdkq75gi2xou"]
+
+[ext_resource type="Script" uid="uid://dmvj3i65vo13p" path="res://Scripts/game_over.gd" id="1_28vn7"]
+[ext_resource type="Texture2D" uid="uid://7iyhowoc47jo" path="res://Sprites/GameOver.png" id="1_y26ei"]
+[ext_resource type="Texture2D" uid="uid://c8sq31ynq71mc" path="res://Sprites/YesUnclicked.tres" id="2_ccer4"]
+[ext_resource type="Texture2D" uid="uid://wdhn7i20muso" path="res://Sprites/YesClicked.tres" id="3_8u835"]
+[ext_resource type="Texture2D" uid="uid://514x5c7bnib0" path="res://Sprites/NoUnclicked.tres" id="4_8u835"]
+[ext_resource type="Texture2D" uid="uid://buccgs88rddh3" path="res://Sprites/NoClicked.tres" id="5_ftari"]
+
+[node name="GameOver" type="CanvasLayer"]
+script = ExtResource("1_28vn7")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1157.0
+offset_bottom = 706.0
+color = Color(0, 0, 0, 0.576471)
+
+[node name="Panel" type="TextureRect" parent="."]
+process_mode = 2
+offset_left = 78.0
+offset_top = -20.0
+offset_right = 1053.0
+offset_bottom = 717.0
+texture = ExtResource("1_y26ei")
+expand_mode = 1
+
+[node name="PlayAgain" type="TextureButton" parent="Panel"]
+process_mode = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.064
+anchor_bottom = 0.215
+offset_left = 119.0
+offset_top = 447.0
+offset_right = 184.6
+offset_bottom = 426.545
+texture_normal = ExtResource("2_ccer4")
+texture_pressed = ExtResource("3_8u835")
+texture_hover = ExtResource("3_8u835")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Quit" type="TextureButton" parent="Panel"]
+process_mode = 2
+layout_mode = 0
+offset_left = 545.0
+offset_top = 443.0
+offset_right = 667.0
+offset_bottom = 579.0
+texture_normal = ExtResource("4_8u835")
+texture_pressed = ExtResource("5_ftari")
+texture_hover = ExtResource("5_ftari")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="Panel/PlayAgain" to="." method="_on_play_again_pressed"]
+[connection signal="pressed" from="Panel/Quit" to="." method="_on_quit_pressed"]

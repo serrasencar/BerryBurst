@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://cjkah4pq0h66j"]
+
+[ext_resource type="Script" uid="uid://cbqx7r1ojdiqj" path="res://Scripts/gui.gd" id="1_m6o0h"]
+[ext_resource type="Texture2D" uid="uid://c364tent0fk5i" path="res://Sprites/score.png" id="1_n5m23"]
+[ext_resource type="FontFile" uid="uid://byc77vrcp5v4k" path="res://Font/Web Open Font Format (.woff)/Kaph-Regular.woff" id="2_m6o0h"]
+[ext_resource type="FontFile" uid="uid://belaq1fjup0r5" path="res://Font/Web Open Font Format (.woff)/Kaph-Regular.woff2" id="3_8kag3"]
+
+[node name="GUI" type="CanvasLayer"]
+script = ExtResource("1_m6o0h")
+
+[node name="ScoreContainer" type="TextureRect" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -245.0
+offset_bottom = 99.0
+grow_horizontal = 0
+texture = ExtResource("1_n5m23")
+expand_mode = 1
+
+[node name="Colon" type="Label" parent="ScoreContainer"]
+offset_left = 132.0
+offset_top = 32.0
+offset_right = 141.0
+offset_bottom = 58.0
+theme_override_colors/font_color = Color(0.282353, 0.0470588, 0.305882, 1)
+theme_override_fonts/font = ExtResource("3_8kag3")
+theme_override_font_sizes/font_size = 21
+text = ":"
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 1047.0
+offset_top = 31.0
+offset_right = 1113.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(0.282353, 0.0470588, 0.305882, 1)
+theme_override_fonts/font = ExtResource("2_m6o0h")
+theme_override_font_sizes/font_size = 26
+text = "0
+"
+horizontal_alignment = 1

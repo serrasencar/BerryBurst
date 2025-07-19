@@ -1,16 +1,23 @@
 extends Node2D
 
 var points = 0
+@onready var gui = $GUI
 
 func add_point():
 	points += 1
-	print("Points:", points)  # Optional debug log
-	
-# Called when the node enters the scene tree for the first time.
+	gui.update_score(points)
+	print("Points:", points)
+
 func _ready() -> void:
-	pass # Replace with function body.
+	$MainMusic.play()
+	$GameOver.visible = false  # Hide GameOver screen when game starts
+	$HealthBar.connect("game_over", Callable(self, "_on_game_over"))
+	
+func _on_game_over():
+	$GameOver.visible = true
+	get_tree().paused = true  # Pause everything
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _on_fruit_catcher_body_entered(body):
+	if body.is_in_group("fruit"):
+		body.queue_free()
+		$HealthBar.remove_heart()

@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://cr4hkd3yyxhki"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kwk4n"]
+load_path = "res://.godot/imported/heart.png-e4c9cacde081f165402ad7c69da5bfce.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7p8dj"]
+atlas = SubResource("CompressedTexture2D_kwk4n")
+region = Rect2(0, 0, 512, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pembh"]
+atlas = SubResource("CompressedTexture2D_kwk4n")
+region = Rect2(512, 0, 512, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bjxl8"]
+atlas = SubResource("CompressedTexture2D_kwk4n")
+region = Rect2(0, 0, 512, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7j81i"]
+atlas = SubResource("CompressedTexture2D_kwk4n")
+region = Rect2(512, 0, 512, 1024)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lk003"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7p8dj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pembh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bjxl8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7j81i")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="heart" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_lk003")
+autoplay = "default"
+frame_progress = 0.593092

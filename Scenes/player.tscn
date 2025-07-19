@@ -112,12 +112,14 @@ shape = SubResource("CircleShape2D_vgqql")
 
 [node name="JumpSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_6t5aa")
-volume_db = -12.0
+volume_db = -1.263
 pitch_scale = 0.8
 
 [node name="CatchSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_vgqql")
-volume_db = -8.988
+volume_db = -1.318
+
+[node name="health_bar" type="CanvasLayer" parent="."]
 
 [connection signal="area_entered" from="Basket" to="." method="_on_basket_area_entered"]
 [connection signal="body_entered" from="Basket" to="." method="_on_basket_body_entered"]

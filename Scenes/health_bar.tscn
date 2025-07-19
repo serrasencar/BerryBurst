@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://ea56i1pp40c"]
+
+[ext_resource type="PackedScene" uid="uid://cpxt0ojjainx2" path="res://heart_gui.tscn" id="1_m7ell"]
+[ext_resource type="Texture2D" uid="uid://dl1spm7ohhrli" path="res://Sprites/Border1.png" id="1_m34ix"]
+[ext_resource type="Script" uid="uid://dqhjutyw1eslm" path="res://Scripts/health_bar.gd" id="1_qay8w"]
+[ext_resource type="AudioStream" uid="uid://xm6l2bidgt20" path="res://Sounds/hurt.wav" id="4_wjrfg"]
+
+[node name="HealthBar" type="CanvasLayer"]
+script = ExtResource("1_qay8w")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -151.0
+offset_top = 6.0
+offset_right = 300.0
+offset_bottom = 120.0
+texture = ExtResource("1_m34ix")
+expand_mode = 1
+
+[node name="heart_container" type="HBoxContainer" parent="."]
+offset_left = 50.0
+offset_top = 37.0
+offset_right = 259.0
+offset_bottom = 106.0
+theme_override_constants/separation = 71
+
+[node name="heartGui" parent="heart_container" instance=ExtResource("1_m7ell")]
+layout_mode = 2
+
+[node name="heartGui2" parent="heart_container" instance=ExtResource("1_m7ell")]
+layout_mode = 2
+
+[node name="heartGui3" parent="heart_container" instance=ExtResource("1_m7ell")]
+layout_mode = 2
+
+[node name="HurtHeart" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_wjrfg")
+volume_db = 1.019

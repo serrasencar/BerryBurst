@@ -10,22 +10,22 @@ script = ExtResource("1_776oj")
 position = Vector2(116, -1)
 
 [node name="Marker2D" type="Marker2D" parent="Spawner"]
-position = Vector2(344, -2)
+position = Vector2(455, -2)
 
 [node name="Marker2D2" type="Marker2D" parent="Spawner"]
-position = Vector2(990, -6)
-
-[node name="Marker2D3" type="Marker2D" parent="Spawner"]
-position = Vector2(833, -6)
+position = Vector2(963, -6)
 
 [node name="Marker2D4" type="Marker2D" parent="Spawner"]
-position = Vector2(670, -2)
+position = Vector2(764, 0)
 
 [node name="Marker2D5" type="Marker2D" parent="Spawner"]
-position = Vector2(507, -1)
+position = Vector2(600, 0)
 
 [node name="Marker2D6" type="Marker2D" parent="Spawner"]
-position = Vector2(184, 1)
+position = Vector2(159, 0)
+
+[node name="Marker2D9" type="Marker2D" parent="Spawner"]
+position = Vector2(316, -3)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.121
